@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const sumov = require('./index');
+const sumov = require('../lib/index');
 
 describe('Sumov is working for:', () => {
     it('objects', () => {
