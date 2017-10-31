@@ -1,6 +1,6 @@
 {
   "name": "sumov",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Computes the sum of all numeric values in an (multilevel) object",
   "keywords": [
     "sum",
