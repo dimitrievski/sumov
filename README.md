@@ -1,13 +1,20 @@
 # Sumov
 
-Computes the sum of all numeric values in an (multilevel) object
+Computes the sum of all numeric values in an (multilevel) object.
+
+To sum up to N levels of an object, just pass N as a second parameter.
 
 ## Usage
 
 ```js
-var sumov = require('sumov');
-var sum = sumov({a: 2, b: ["2", null, [], {a: {a: -1.0}}], c: {quick: "maths"}});
+const sumov = require('sumov');
+
+let sum = sumov({a: 2, b: ["2", null, [], {a: {a: -1.0}}], c: {quick: "maths"}});
 // => 3
+
+//sum up to 2 levels
+sum = sumov({a: 2, b: ["2", null, [], {a: {a: -1.0}}], c: {quick: "maths"}}, 2);
+// => 4
 ```
 
 ## Installation
